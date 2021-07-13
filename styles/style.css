@@ -33,7 +33,7 @@ nav {
   display: flex;
   justify-content: space-between;
   width: 950px;
-  /* background-color: orangered; */
+  height: 94px;
 }
 .profile {
   display: flex;
@@ -60,8 +60,7 @@ nav {
   font-weight: 400;
   margin-left: 36px;
 }
-
-header nav .profile-pic {
+.profile-pic {
   height: 65px;
   width: 65px;
   vertical-align: middle;
@@ -126,4 +125,62 @@ header nav .profile-pic {
   color: #562eff;
   font-size: 16px;
   text-decoration: none;
+}
+
+/* Latest Courses */
+.courses {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 15px;
+}
+.course {
+  /* box-shadow: 5px 5px 5px 5px #f3f1ff; */
+  box-shadow: 0px 0px 25px 0px #f3f1ff;
+  border-radius: 10px;
+  padding: 5px;
+}
+.course img {
+  width: 224px;
+  height: 104px;
+}
+.course-title {
+  font-size: 20px;
+  margin: 5px 0px;
+  /* margin-bottom: 0px; */
+}
+.course-instructor {
+  font-size: 14px;
+  color: #ed6b4f;
+  margin: 5px 0px;
+  /* margin-bottom: 0px; */
+}
+.course-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+.fa-star.filled {
+  color: #ffc014;
+}
+.fa-star.empty {
+  color: #aeaeae;
+}
+.rating {
+  margin: 0 10px;
+}
+.hours {
+  display: flex;
+  align-items: center;
+  background: #ffe4e8;
+  border-radius: 15px;
+  padding: 0px 10px;
+}
+.fa-clock.color {
+  color: #ff4a60;
+}
+.duration {
+  margin: 0 10px;
+  color: #ff4a60;
+  margin-right: 0px;
 }
